@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="/assets/sweetalert2/sweetalert2.min.js"></script>
+    <script src="/assets/sweetalert2/messagebox.js"></script>
+    <link rel="stylesheet" href="/assets/sweetalert2/sweetalert2.min.css">
+</head>
+<body>
+    <input type="button" value="Success" onclick="showSuccess();" />
+    <input type="button" value="Error" onclick="showError();" />
+    <input type="button" value="Warning" onclick="showWarning();" />
+    <input type="button" value="Info" onclick="showInfo();" />
+    <input type="button" value="Confirm" onclick="showConfirm();" />
+
+    <script>
+        function showSuccess() {
+            messagebox.showSuccess("İşlem Sonucu", "İşleminiz başarılı bir şekilde gerçekleştirildi.");
+        }
+
+        function showError() {
+            messagebox.showError("İşlem Sonucu", "İşleminiz sırasında hata gerçekleşti.");
+        }
+
+        function showWarning() {
+            messagebox.showWarning("Eksik Bilgi", "Kullanıcı adı alanına bilgi giriniz.");
+        }
+
+        function showInfo() {
+            messagebox.showInfo("Bilgi", "Lütfen sistem yöneticisine bilgi veriniz.");
+        }
+
+        function showConfirm() {
+            messagebox.showConfirm("Emin misiniz?", "İşleminiz geriye döndürülemeyecektir.", "İşlem Sonucu", "İşleminiz başarılı bir şekilde gerçekleştirildi.");
+        }        
+    </script>
+</body>
+</html>
